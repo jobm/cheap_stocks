@@ -1,17 +1,17 @@
 ### Cheap Stocks Inc. CLI App
 
-This is a simple cli app that takes in an `ISO 4217 Code` as an argument, 
-then checks if the code corresponds to any currency. If a currency it's found
-it returns a string showing that the currency is supported and some metadata 
-about the currency. Otherwise returns a string showing the `code` is not supported.
+This is a simple cli app, that takes in an `ISO 4217 Code`  `str` as an argument, 
+then checks if it corresponds to any currency in `cheap_stocks` inc app. 
+If a currency it's found, it returns a string showing that the currency is supported, and some metadata 
+about the currency. Otherwise it returns a string showing the `ISO 4217 Code` supplied by the user is not supported.
 
 #### Setup
-This commanda below will install the app as a package: `
-1. `virtualenv venv` : will create an env.
+The commands below will install the app as a package, after you clone the repo and `cd cheap_stocks`: 
+1. `virtualenv venv` : will create an env (it may require you install `virtualenv`).
 2. `. venv/bin/activate`: activate env.
-3. `pip install -e .`:  install as a package.
+3. `pip install -e .`:  install.
 
-#### Running Tests
+#### Testing
 `python -m unittest tests/cli_app_tests.py`
 
 #### Usage
